@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Landscape />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Landscape from "@/components/Landscape/MainComponent.vue"
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    Landscape
   }
 }
 </script>
 
 <style>
+@font-face {
+  font-family: bubble;
+  src: url('../public/fonts/ChoretFudyngBubble-Regular.ttf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html,body{
+  margin:0;
+}
+
+*{
+  overflow-x:hidden;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
