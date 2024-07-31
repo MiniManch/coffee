@@ -1,4 +1,4 @@
-<template >
+<template>
     <div class="ContainerOfAll">
         <div class="text">
             <h1 class="title">Pangu Island Coffee</h1>
@@ -10,59 +10,80 @@
         </div>
     </div>
 </template>
+
 <script>
 export default {
-    
+    // Add any JavaScript functionality if needed
 }
 </script>
+
 <style scoped>
-    .ContainerOfAll{
+    .ContainerOfAll {
         height: 100vh;
         width: 100vw;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap:0;
-
         background-color: #FF6347;
     }
 
-    .text{
-        width:60%;
-        height:30%;
+    .text {
+        width: 60%;
+        text-align: center;
+        margin-top: 20px; /* Add some space from the top */
         overflow-y: hidden;
     }
-    .imageContainer{
-        width:85%;
-        height:65%;
+
+    .imageContainer {
+        width: 85%;
+        height: 65%;
+        position: relative; /* Positioning context for the button */
         overflow: hidden;
     }
-    .text > h1{
-        font-family: bubble, sans-serif;
-        font-size:8em;
-        height:fit-content;
-        margin:0;
+
+    .text > h1 {
+        font-family: 'Bubble', sans-serif;
+        font-size: 8em;
+        margin: 0;
         font-weight: 200;
-        color:black;
+        color: black;
     }
-    .text > p{
-        font-family: "Exo 2", sans-serif;
-        font-size:2em;
-        margin-top:0;
+
+    .text > p {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 2em;
+        margin-top: 0;
         font-weight: 200;
-        color:black;
+        color: black;
     }
 
     .imageContainer > img {
-        width:100%;
-        height:100%;
-    }
-    button{
-        position: relative;
-        top:0;
-        z-index: 2;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
     }
 
+    button {
+        position: absolute; 
+        bottom: 20px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        width: 15vw; 
+        height: 3vw; 
+        background-color: #fff; 
+        color: #FF6347; 
+        border: none;
+        border-radius: 25px; 
+        font-size: 2em;
+        font-family: 'Exo 2', sans-serif;
+        cursor: pointer;
+        z-index: 1; 
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    button:hover {
+        background-color: #FF6347;
+        color: #fff;
+    }
 </style>
