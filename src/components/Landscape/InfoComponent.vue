@@ -12,22 +12,22 @@
             <div class="para">
                 <div class="num">1</div>
                 <div class="content">
-                    <h3>Fresh, Seasonal Ingredients</h3>
-                    <p>Fresh, Seasonal Ingredients</p>
+                    <h1>Fresh, Seasonal Ingredients</h1>
+                    <p>Our menu follows the seasons, featuring the best local produce available</p>
                 </div>
             </div>
             <div class="para">
                 <div class="num">2</div>
                 <div class="content">
-                    <h3>Fresh, Seasonal Ingredients</h3>
-                    <p>Fresh, Seasonal Ingredients</p>
+                    <h1>Comfort Food, Elevated</h1>
+                    <p>We have simple crowd-favorites on the menu - but we do them well. <br> Our flavors stand out, guaranteed.</p>
                 </div>
             </div>
             <div class="para">
                 <div class="num">3</div>
                 <div class="content">
-                    <h3>Fresh, Seasonal Ingredients</h3>
-                    <p>Fresh, Seasonal Ingredients</p>
+                    <h1>Better Beverages </h1>
+                    <p>We're your cafe and barista in one, serving your favorite cuppa by sun-up, and your cocktail-of-choice by sundown.</p>
                 </div>
             </div>
         </div>
@@ -48,7 +48,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap:5vw;
 
         font-family: 'Exo 2', sans-serif;
     }
@@ -80,8 +79,8 @@
         background-color: #FF6347;
         border-radius: 25px;
         width:40vw;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
+        padding:3vh;
+        padding-left: 5vh;
     }
     .para{
         display: flex;
@@ -91,8 +90,9 @@
     }
     .para > .num{
         font-size: 2em;
+        font-weight: 400;
         color:white;
-        margin-left: 5vw;
+
         background-color: black;
         border-radius: 60%;
         width:3vw;
