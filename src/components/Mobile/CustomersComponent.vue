@@ -45,6 +45,7 @@
     padding-bottom: 5vh;
     padding-top: 5vh;
   }
+*{overflow:hidden;}
   h1{
     font-family: 'Bubble', sans-serif;
     font-size: 4.5em;
@@ -83,7 +84,7 @@
   }
   .cardText{
     width:100%;
-    height:25vh;
+    height:30vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
