@@ -68,7 +68,11 @@ export default {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: white;
+        width:100%;
+        height:20vh;
     }
+    
     h1{
         font-family: 'Bubble', sans-serif;
         font-size: 5em;
@@ -128,13 +132,7 @@ export default {
 
     }
     .imageText{
-        background-color: white;
-        width:100%;
-        height:20vh;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        
     }
     .image_1{
         background-image: url('../../../public/Images/menu/menu_1s.jpg');
