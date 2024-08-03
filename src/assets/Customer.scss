@@ -1,0 +1,21 @@
+@use 'sass:math';
+
+$n: 15; /* number of circles */
+
+.flower-img {
+  --r: 3vw; /* control the small circles radius */
+  aspect-ratio: 1;
+  border-radius: 50%;
+  $m: ();
+  @for $i from 1 through $n {
+    $m: append(
+      $m,
+      radial-gradient(#000 70%, #0000 72%) no-repeat
+        calc(50% + 50% * math.cos(math.div(360deg * $i, $n)))
+        calc(50% + 50% * math.sin(math.div(360deg * $i, $n))) /
+        var(--r) var(--r),
+      comma
+    );
+  }
+  -webkit-mask: radial-gradient(#000 calc(72% - var(--r) / 2), #0000 0), $m;
+}

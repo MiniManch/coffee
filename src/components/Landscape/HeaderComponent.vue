@@ -13,7 +13,6 @@
 
 <script>
 export default {
-    // Add any JavaScript functionality if needed
 }
 </script>
 
@@ -29,7 +28,7 @@ export default {
     }
 
     .text {
-        width: 60%;
+        width: 80%;
         text-align: center;
         margin-top: 20px; /* Add some space from the top */
         overflow-y: hidden;
@@ -69,8 +68,8 @@ export default {
         bottom: 20px; 
         left: 50%; 
         transform: translateX(-50%); 
-        width: 15vw; 
-        height: 3vw; 
+        min-width: fit-content; 
+        height: 4vw; 
         background-color: #fff; 
         color: #FF6347; 
         border: none;
@@ -80,6 +79,7 @@ export default {
         cursor: pointer;
         z-index: 1; 
         transition: background-color 0.3s, color 0.3s;
+        padding:0 3vh;
     }
 
     button:hover {
