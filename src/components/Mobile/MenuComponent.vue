@@ -93,6 +93,7 @@ export default {
     button {
         width:70vw; 
         height: 10vh; 
+        overflow:hidden;
         margin-top: 5vh;
         background-color: #fff; 
         color: #FF6347; 
