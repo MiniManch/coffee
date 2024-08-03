@@ -1,7 +1,7 @@
 <template>
     <div class="ContainerOfAll">
         <div class="text">
-            <h1 class="title">Pangu Coffee</h1>
+            <h1 class="title">Pangu Coffee mobile</h1>
             <p class="under-title">Enjoy Food, Enjoy Life</p>
         </div>
         <div class="imageContainer">

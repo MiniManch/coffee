@@ -16,8 +16,6 @@ import Menu from "@/components/Mobile/MenuComponent.vue"
 import Customers from "@/components/Mobile/CustomersComponent.vue"
 import Contact from "@/components/Mobile/ContactComponent.vue"
 
-
-
 export default {
     components:{
         Header,
