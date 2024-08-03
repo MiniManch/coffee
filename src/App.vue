@@ -18,6 +18,9 @@ export default {
     Landscape,
     Mobile
   },
+  mounted(){
+    this.detectScreen();
+  },  
   methods: {
     detectScreen() {
       this.isLandscape = window.innerWidth > window.innerHeight;
