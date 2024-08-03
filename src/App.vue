@@ -1,13 +1,27 @@
 <template>
-  <Landscape />
+  <Landscape v-if="isLandscape"/>
+  <Mobile v-else/>
 </template>
 
 <script>
 import Landscape from "@/components/Landscape/MainComponent.vue"
+import Mobile from "@/components/Mobile/MainComponent.vue"
+
 export default {
   name: 'App',
+  data(){
+    return{
+      isLandscape: false
+    }
+  },
   components:{
-    Landscape
+    Landscape,
+    Mobile
+  },
+  methods: {
+    detectScreen() {
+      this.isLandscape = window.innerWidth > window.innerHeight;
+    },
   }
 }
 </script>
