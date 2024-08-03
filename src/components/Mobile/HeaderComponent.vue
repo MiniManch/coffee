@@ -55,6 +55,7 @@ export default {
         margin-top: 0;
         font-weight: 200;
         color: black;
+        padding-bottom: 5vh;
     }
 
     .imageContainer > img {
